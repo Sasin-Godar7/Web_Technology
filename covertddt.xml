@@ -1,0 +1,62 @@
+<?xml version = "1.0"?>
+<xs:schema xmlns:xs="https:\\www.w3.org/2001/XMLSchema">
+
+    <xs:element name="PhoneNumber">
+
+        <!-- those who have child and attribute is known as the complex typethose who have only one line content is known as the simple type -->
+
+        <xs:complexType>
+            <xs:Sequence>
+
+                <!--if the question qiven to write in a Sequence order than you have to write the Sequence in the code-->
+
+                <xs:element name="title"  type="xs:string"/>
+                    <xs:simpleType>
+                      
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="entries"/>
+                    <xs:complexType>
+                    <xs:element name ="entry"/>
+                        <xs:restriction base="xs:integer">
+                            <xs:maxOccurs value="unbounded" />
+                            <xs:minOccur value="0" />
+                        </xs:restriction>
+                    </xs:complexType>
+                    </xs:element>
+                </xs:element>
+
+            
+
+                <xs:element name="Name" type="xs:string" >
+                <xs:complexType>
+                <xs:Sequence>
+                <xs:element name="Fname" type="nameType"/>
+                <xs:element name ="Mname" type="nametype" minOccur="0" maxOccurs="1"/>
+                <xs:element name="Lname" type="nameType"/>
+                </xs:Sequence>
+                </xs:complexType>
+                </xs:element>
+
+                 <xs:element name="Phone /">
+                 <xs:simpleType>
+                  </xs:simpleType>
+                  </xs:element>
+
+                   <xs:element name="City"/>
+                 <xs:simpleType>
+                 <xs: minOccur="0" maxOccurs="1"/>
+
+                  </xs:simpleType>
+                </xs:element>
+
+
+
+            </xs:complexType>
+
+        </xs:Sequence>
+    
+    </xs:element>
+
+</xs:schema>
