@@ -1,0 +1,85 @@
+<?xml version = "1.0"?>
+<xs:schema xmlns:xs="https:\\www.w3.org/2001/XMLSchema">
+
+    <xs:element name=" Student">
+
+        <!-- those who have child and attribute is known as the complex type 
+ those who have only one line content is known as the simple type -->
+
+        <xs:complexType>
+            <xs:Sequence>
+
+                <!--if the question qiven to write in a Sequence order than you have to write the Sequence in the code-->
+
+                <xs:element name="RollNo" />
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:MaxInclusive value="35" />
+                            <xs:MinInclusive value="1" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <!-- <xs:element name="Name">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="3" />
+                            <xs:maxLength value="8" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element> -->
+
+                <!--if we have to apply the same restriction to all the type of a same type thann we can use the name type as following-->
+
+                  <!--code start-->
+                <xs:simpleType name="nameType">
+                <xs:restriction base="xs:string">
+                <xs:minLength value="3"/>
+                <xs:maxLength value="30"/>
+                </xs:restriction>
+                </xs:simpleType>
+
+                <xs:element name="Name">
+                <xs:complexType>
+                <xs:Sequence>
+                <xs:element name="Fname" type="nameType"/>
+                <xs:element name ="Mname" type="nametype" minOccur="0" maxOccurs="1"/>
+                <xs:element name="Lname" type="nameType"/>
+                </xs:Sequence>
+                </xs:complexType>
+                </xs:element>
+
+                     <!--code end-->
+
+
+                <xs:element name="Gender">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="male|female" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="PhoneNo">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[9][7-8][0-9]{8}" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                    <xs:element name="City">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Bharatpur" />
+                            <xs:enumeration value="Gaindakot" />
+                            <xs:enumeration value="Kathmandu" />
+                        </xs:restriction>
+                    </xs:simpleType>
+             </xs:element>
+
+             </xs:Sequence>
+             </xs:complexType>
+             </xs:element>
+             </xs:schema>
+
