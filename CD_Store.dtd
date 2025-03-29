@@ -1,0 +1,45 @@
+<!-- <?xml version = "1.0" encoding = "UTF-8"> -->
+
+<!DOCTYPE CD_Store>
+ [
+
+<!ELEMENT CD_Store(CD+) >
+
+<!ELEMENT CD+(title,Author,Price,Year,Description)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT Author(Fname,Mname,Lname)>
+<!ELEMENT Fname(#PCDATA)>
+<!ELEMENT Mname(#PCDATA)>
+<!ELEMENT Lname(#PCDATA)>
+
+<!ELEMENT Price(Cost_Price,Selling_Price)>
+<!ELEMENT Cost_Price(#PCDATA)>
+<!ELEMENT Selling_Price(#PCDATA)>
+
+<!ELEMENT Year(#PCDATA)>
+
+<!ELEMENT Description(#PCDATA)>
+
+]>
+
+
+<CD_Store>
+
+<CD+>
+
+<title>about CD_Store</title>
+<Author>
+<Fname>Sasin </Fname>
+<Mname>bahadur</Mname>
+<Lname>Godar</Lname>
+
+<Price>
+<Cost_Price>3000</Cost_Price>
+<Selling_Price>2000</Selling_Price>
+
+<Year>2021</Year>
+
+<Description>this is a Description time and this is a description</Description>
+</CD+>
+</CD_Store>
