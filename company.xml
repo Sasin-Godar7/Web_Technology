@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="company.xsl"?>
+<company>
+    <employee>
+        <name>Prabin</name>
+        <age>30</age>
+        <salary>50000</salary>
+        <phone>9832423432</phone>
+        <email>prabin@example.com</email>
+    </employee>
+    <employee>
+        <name>sasin Godar</name>
+        <age>28</age>
+        <salary>60000</salary>
+        <phone>9832423432</phone>
+        <email>sasin@example.com</email>
+    </employee>
+    <employee>
+        <name>Prabin</name>
+        <age>30</age>
+        <salary>50000</salary>
+        <phone>9832423432</phone>
+        <email>prabin@example.com</email>
+    </employee>
+    <employee>
+        <name>sasin Godar</name>
+        <age>28</age>
+        <salary>60000</salary>
+        <phone>9832423432</phone>
+        <email>sasin@example.com</email>
+    </employee>
+    
+</company>
+
