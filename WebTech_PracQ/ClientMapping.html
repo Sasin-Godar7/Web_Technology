@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client & Server Side Image Map</title>
+</head>
+<body>
+
+    <h2>Client-Side Image Map</h2>
+
+    <img src="https://via.placeholder.com/400x200" usemap="#clientmap" alt="Map Example">
+
+    <map name="clientmap">
+        <area shape="rect" coords="0,0,200,100" href="https://www.google.com" alt="Google" target="_blank">
+        <area shape="rect" coords="200,0,400,100" href="https://www.youtube.com" alt="YouTube" target="_blank">
+    </map>
+
+    <p>Click left half for Google, right half for YouTube</p>
+
+    <hr>
+
+    <h2>Server-Side Image Map</h2>
+
+    <!-- Note: "ismap" works only with <a> tag -->
+    <a href="servermap.php" target="_blank">
+        <img src="https://via.placeholder.com/400x200" ismap alt="Server Side Map Example">
+    </a>
+
+    <p>In server-side image map, coordinates are sent to server (e.g., servermap.php?x=150&y=60)</p>
+
+</body>
+</html>
