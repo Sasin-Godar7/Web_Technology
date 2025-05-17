@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studentinfo 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="student.xsd">
+
+    <student>
+        <name>heera thakur</name>
+        <age>88</age>
+    </student>
+
+</studentinfo>
