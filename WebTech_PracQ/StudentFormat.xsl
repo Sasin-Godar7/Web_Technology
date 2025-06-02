@@ -7,8 +7,11 @@
     <html>
       <body>
         <h2>Student Info</h2>
-        <table border="1">
-          <tr><th>Name</th><th>Age</th></tr>
+        <table border="1">  
+          <tr>
+          <th>Name</th>
+          <th>Age</th>
+          </tr>
           <xsl:for-each select="students/student">
             <tr>
               <td><xsl:value-of select="name"/></td>
