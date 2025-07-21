@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- Image Mapping is a technique to define clickable areas on an image.
+Client-side image map uses <map> and <area> tags with usemap attribute; browser processes clicks.
+Server-side image map uses ismap attribute; server receives coordinates to process clicks. -->
+
+<!-- 🔹 Client-Side Image Map
+Client side ma browser le handle garcha, no server interaction required for clicks.
+
+Use usemap attribute in <img> tag + <map> tag with <area> elements. -->
+    
+
+    <img src="worldmap.jpg" alt="worldmap" usemap="#worldmap">
+
+    <map name="#worldmap">
+        <area shape="circle" coords="150,150,100" href="asia.html" alt="asia">
+       </map>
+
+
+       <!-- 🔹 Server-Side Image Map
+When user clicks image, browser sends coordinates of click to server.
+
+Server then decides what to do based on clicked coordinates.
+
+Use ismap attribute in <img> tag, and <a href="maphandler.php"> wrapping it. -->
+
+
+    <a href="www.laptophub">
+        <img src="laptop.jpg" alt="laptops" ismap>
+    </a>
+
+    
+</body>
+</html>
