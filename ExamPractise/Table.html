@@ -1,48 +1,56 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <title>Table format for exam</title>
+    <style>
+        .tt {
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        .tt, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
-    <table>
+    <table class="tt">
         <tr>
-            <th>Student Name</th>
-
-            <th>Address</th>
-
+            <th rowspan="2">Student Name</th>
+            <th rowspan="2">Address</th>
             <th colspan="2">Phone number</th>
         </tr>
         <tr>
             <th>Student's</th>
-            <th>teacher's</th>
-        </tr>
-
-
-        <tr>
-            <td>Sroj poudel</td>
-            <td>bharatpur</td>
-            <td>98777887788</td>
-            <td>8899888</td>
-
+            <th>Teacher's</th>
         </tr>
 
         <tr>
-            <td>binal poudel</td>
-            <td>baglung</td>
+            <td>Sroj Poudel</td>
+            <td>Bharatpur</td>
             <td>98777887788</td>
             <td>8899888</td>
-
         </tr>
 
         <tr>
-            <td>ramesh poudel</td>
-            <td>gaidakot</td>
+            <td>Binal Poudel</td>
+            <td>Baglung</td>
             <td>98777887788</td>
             <td>8899888</td>
+        </tr>
 
+        <tr>
+            <td>Ramesh Poudel</td>
+            <td>Gaidakot</td>
+            <td>98777887788</td>
+            <td>8899888</td>
         </tr>
     </table>
 
 </body>
+</html>
